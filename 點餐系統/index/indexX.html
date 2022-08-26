@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>點餐系統</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>點餐</h1>
+    <h2>多功能點餐(隨便)</h2>
+    <form>
+      <input type="text" id="order" placeholder="輸入餐點(備註)" required maxlength="12">
+      <select name="number" id="number2"  required maxlength="15" >
+      <option style="display:none" value="">請選擇數量</option>
+      <option value="1">1份</option>
+      <option value="2">2份</option>
+      <option value="3">3份</option>
+      <option value="4">4份</option>
+      <option value="5">5份</option>
+      </select>
+      <input type="text" id="name" placeholder="輸入名字(備註)" required maxlength="12">
+      <input type="number" id="price" placeholder="輸入價錢" required maxlength="3">
+      <input  type="button" id="sendOrder" value="送出餐點">
+
+    </form>
+    <!--<button>總價</button><button>清除菜單</button>-->
+    <h3>清單</h3>
+    <a href="https://docs.google.com/spreadsheets/d/13qM3Z9a_l7gc-Z0yGpVuLt3zNHgTIiglrnnmo3Pc3fM/edit#gid=0" target="iframe_a">已點餐清單</a>
+    <h3>上傳</h3>
+    <!--上傳圖片的按鈕-->
+    <input id="file" type="file"/>
+    <p>備註:使用於飲料或是未登錄店家!!</p><p>備註:店家依需求更換</p>
+    <p>備註:店家圖片可自行更換，<a href="X:\PSMC\Website\點餐系統\img">將圖片放置此處</a>，並改名為0.jpg即可!!</p>
+    <ul>
+      <!--Display wishes here-->
+    </ul>
+    <div class="container3">
+    <ol>
+      <!--Display wishes here-->
+    </ol>
+  </div>
+
+  </div>
+  
+  <div class="container2" style="height:300px;overflow:auto;">
+    <!--預覽區塊-->
+    <img src="../img/0.jpg">
+    <img id="demo">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/main3.js"></script>
+</body>
+
+</html>

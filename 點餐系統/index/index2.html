@@ -11,26 +11,22 @@
 <body>
   <div class="container">
     <h1>點餐</h1>
-    <a href="../../PSMC.html">PSMC</a>
-    <a href="index.html">雞腿大王</a>
-    <a href="index2.html">麥當勞</a>
-    <a href="index3.html">多用點餐</a>
     <h2>麥當勞</h2>
     <form>
       <select name="number" id="number"  required maxlength="15" >
       <option style="display:none" value="">請選擇餐點</option>
       </select>
-      <select name="number" id="number3"  required maxlength="15" >
-      <option style="display:none" value="0元">請選擇升級</option>
+      <select name="number" id="number3"  required maxlength="15" disabled>
+      <option style="display:none" value="0元">請選擇升級(目前不開放)</option>
       </select>
-      <select name="number" id="number2"  required maxlength="15" >
+      <!--<select name="number" id="number2"  required maxlength="15" >
       <option style="display:none" value="">請選擇數量</option>
       <option value="1">1份</option>
       <option value="2">2份</option>
       <option value="3">3份</option>
       <option value="4">4份</option>
       <option value="5">5份</option>
-      </select>
+      </select>-->
       <input type="text" id="name" placeholder="輸入名字(備註)" required maxlength="12">
       <!--<input type="number" id="price" placeholder="輸入價錢" required maxlength="3">-->
       <input  type="button" id="sendOrder" value="送出餐點">
@@ -38,8 +34,8 @@
     </form>
     <!--<button>總價</button><button>清除菜單</button>-->
     <h3>清單</h3>
-    <a href="https://docs.google.com/spreadsheets/d/13qM3Z9a_l7gc-Z0yGpVuLt3zNHgTIiglrnnmo3Pc3fM/edit#gid=0" target="_blank">已點餐清單</a>
-    <h2><p>備註:價錢為2022年已加A餐價錢，為了點餐方便，配餐一律為A配餐!!</p></h2><p>備註:價錢需加5元</p>
+    <a href="https://docs.google.com/spreadsheets/d/13qM3Z9a_l7gc-Z0yGpVuLt3zNHgTIiglrnnmo3Pc3fM/edit#gid=0" target="iframe_a">已點餐清單</a>
+    <h2><p>備註:價錢為2022年已加A餐價錢，為了點餐方便，配餐一律為A配餐!!</p></h2><p>備註:外送價錢需加5元</p>
     <ul>
       <!--Display wishes here-->
     </ul>
@@ -51,7 +47,7 @@
 
   </div>
   
-  <div class="container2">
+  <div class="container2" style="height:300px;overflow:auto;">
     <img src="../img/mc.jpg"  >
     <img src="../img/mc1.jpg">
     <img src="../img/mc2.jpg">

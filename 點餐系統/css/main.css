@@ -1,14 +1,14 @@
-<style >
-    * {
+   * {
   box-sizing: border-box;
+  color: #000000;
+  font-weight: bold;
 }
 
 body {
   margin: 0;
-  background-image: url(../img/background.jpg);
-  /*background-color:black ;*/
-  background-position: center;
-  background-size: cover;
+  background-color:rbgb(0,0,0);
+  background-position: 20% 10%;
+   background-size: cover;
   background-repeat: no-repeat;
   height: max;
   overflow-x: hidden;
@@ -18,11 +18,25 @@ body {
 .container {
   width: 1000px;
   text-align: center;
-  background: #22a6b3;
+  background: rgb(137, 168, 50, 0.8);
   border-radius: 10px;
   margin-top: 20px;
   display:block; 
   margin:auto;
+}
+
+.container4 {
+  width: 80%;
+  text-align: center;
+  background: rgb(137, 168, 50, 0.6);
+  border-radius: 10px;
+  margin-top: 20px;
+  display:block; 
+  margin:auto;
+}
+
+.container5 {
+  padding:10px;
 }
 
 .container h1 {
@@ -110,13 +124,15 @@ input[type="number"], .container select  {
  color: red;
 }
 
+
 .container2 img {
   width: 1000px;
-  text-align: center;
-  background: #22a6b3;
+  height: 1200px;
+  opacity: 0.8;
   border-radius: 10px;
   display:block; 
   margin:auto;
+
 }  
 
 .container select {
@@ -124,7 +140,7 @@ input[type="number"], .container select  {
  padding: 3px;
  
 }
-
+button
 
 #op0,#op10,#op16,#op23 {
  color: red;
@@ -132,9 +148,39 @@ input[type="number"], .container select  {
 
 #opm0, #opm14{
  color: red;
+
+}
+
+#opm2, #opm10, #opm12{
+
+text-decoration: line-through;
 }
 
 p {
   color: red;
 }
-  </style>
+
+#sendOrder:hover {
+  transform: scale(1.05);
+
+}
+
+#sendOrder:active {
+  transform: scale(1);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+}
+
+.container4 a:hover{
+  color: red;
+}
+
+.container a:hover{
+  color: red;
+}
+
+.container5 iframe {
+  width: 80%;
+  height: 800px;
+  border:none;
+  opacity: 0.9;
+}
