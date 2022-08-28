@@ -14,7 +14,7 @@
   function limitTime() {
     var currentTime = new Date();
     var setTime = new Date(currentTime.getFullYear(),currentTime.getMonth(),
-    currentTime.getDate(),19,31,0 );
+    currentTime.getDate(),17,31,0 );
     var urll = "../img/1668366.jpg";          
     if(currentTime.getTime() > setTime.getTime()){
       document.body.innerHTML="";

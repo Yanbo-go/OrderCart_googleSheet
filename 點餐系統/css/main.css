@@ -14,31 +14,28 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+body::-webkit-scrollbar {
+   -ms-overflow-style: none;
+  display: none;
+
+}
 
 .container {
   width: 1000px;
   text-align: center;
-  background: rgb(137, 168, 50, 0.8);
+  background: rgb(137, 168, 50, 0.9);
   border-radius: 10px;
-  margin-top: 20px;
+  margin: 18px;
   display:block; 
-  margin:auto;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.container4 {
-  width: 80%;
-  text-align: center;
-  background: rgb(137, 168, 50, 0.6);
-  border-radius: 10px;
-  margin-top: 20px;
-  display:block; 
-  margin:auto;
+.container a:hover{
+  color: red;
 }
-
-.container5 {
-  padding:10px;
-}
-
 .container h1 {
   color: white;
 }
@@ -115,6 +112,14 @@ input[type="number"], .container select  {
 .container p {
  text-align: left;
  padding: 0 35px;
+ color: red;
+
+}
+
+.container select {
+ text-align: center;
+ padding: 3px;
+ 
 }
 
 .container button {
@@ -124,23 +129,62 @@ input[type="number"], .container select  {
  color: red;
 }
 
+.container2 {
+  height:400px;
+  margin: 18px;
+  overflow:auto;
+  position: absolute;
+  top:70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .container2 img {
   width: 1000px;
-  height: 1200px;
-  opacity: 0.8;
+  height:1500px;
+  opacity: 0.9;
   border-radius: 10px;
   display:block; 
   margin:auto;
-
 }  
 
-.container select {
- text-align: center;
- padding: 3px;
- 
+.container2::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+
 }
-button
+
+.container4 {
+  width: 250px;
+  background: rgb(137, 168, 50, 0.6);
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  display:block; 
+  position: fixed;
+  float: left;
+  text-decoration-line: none;
+}
+
+.container4 ul{
+  margin-left: 25%;
+  list-style-type:none;
+}
+
+.container4 a:hover{
+  color: red;
+}
+
+.container5 {
+  padding-top:5px;
+}
+
+.container5 iframe {
+  width: 70%;
+  height: 800px;
+  border:none;
+  opacity: 0.9;
+}
 
 #op0,#op10,#op16,#op23 {
  color: red;
@@ -151,13 +195,13 @@ button
 
 }
 
-#opm2, #opm10, #opm12{
+#opm2, #opm10, #opm12 {
 
 text-decoration: line-through;
 }
 
-p {
-  color: red;
+#opb0,#opb13,#opb25 {
+ color: red;
 }
 
 #sendOrder:hover {
@@ -168,19 +212,4 @@ p {
 #sendOrder:active {
   transform: scale(1);
   box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
-}
-
-.container4 a:hover{
-  color: red;
-}
-
-.container a:hover{
-  color: red;
-}
-
-.container5 iframe {
-  width: 80%;
-  height: 800px;
-  border:none;
-  opacity: 0.9;
 }
